@@ -559,7 +559,7 @@ const (
 	// Separate annotation permissions from dashboard permissions to allow for more granular control.
 	FlagAnnotationPermissionUpdate = "annotationPermissionUpdate"
 
-	// FlagLogsRowsPopoverMenu
+	// FlagLogRowsPopoverMenu
 	// Enable filtering menu displayed when text of a log line is selected
-	FlagLogsRowsPopoverMenu = "logsRowsPopoverMenu"
+	FlagLogRowsPopoverMenu = "logRowsPopoverMenu"
 )

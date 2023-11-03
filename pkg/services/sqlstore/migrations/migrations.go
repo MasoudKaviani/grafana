@@ -106,6 +106,8 @@ func (*OSSMigrations) AddMigration(mg *Migrator) {
 	ualert.CreatedFoldersMigration(mg)
 
 	dashboardFolderMigrations.AddDashboardFolderMigrations(mg)
+
+	addPanelMigrations(mg)
 }
 
 func addStarMigrations(mg *Migrator) {

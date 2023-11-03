@@ -966,5 +966,12 @@ var (
 			RequiresDevMode: false,
 			Owner:           grafanaAuthnzSquad,
 		},
+		{
+			Name:         "logsRowsPopoverMenu",
+			Description:  "Enable filtering menu displayed when text of a log line is selected",
+			Stage:        FeatureStagePrivatePreview,
+			FrontendOnly: true,
+			Owner:        grafanaObservabilityLogsSquad,
+		},
 	}
 )

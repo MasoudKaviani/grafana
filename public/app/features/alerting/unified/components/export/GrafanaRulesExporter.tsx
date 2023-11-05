@@ -33,9 +33,12 @@ interface GrafanaRulesExportPreviewProps {
 }
 
 function GrafanaRulesExportPreview({ exportFormat, onClose }: GrafanaRulesExportPreviewProps) {
-  const { currentData: rulesDefinition = '', isFetching } = alertRuleApi.endpoints.exportRules.useQuery({
-    format: exportFormat,
-  });
+  const { currentData: rulesDefinition = '', isFetching } = alertRuleApi.endpoints.exportRules.useQuery(
+    {
+      format: exportFormat,
+    },
+    { refetchOnMountOrArgChange: true }
+  );
 
   const downloadFileName = `alert-rules-${new Date().getTime()}`;
 
